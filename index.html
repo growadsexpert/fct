@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FCT PRO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(to bottom, rgba(0,30,60,0.85), rgba(0,0,0,0.9)),
+    url("https://i.ibb.co/5k9XvXt/stadium.jpg");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+}
+.container{
+    max-width:420px;
+    width:100%;
+    text-align:center;
+    padding:25px 15px 40px;
+}
+h1{
+    font-size:30px;
+    font-weight:700;
+    line-height:1.2;
+}
+h1 span{
+    display:block;
+}
+.tagline{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+.subtext{
+    margin-top:20px;
+    font-size:16px;
+    opacity:0.85;
+}
+.counter{
+    margin:20px auto;
+    width:120px;
+    height:120px;
+    background:#d4ff00;
+    color:#000;
+    font-size:48px;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:25px;
+}
+.stats{
+    margin-top:10px;
+    font-size:16px;
+}
+.stats div{
+    margin:8px 0;
+}
+.arrow{
+    color:#c7ff00;
+    margin-right:6px;
+}
+.cta{
+    margin-top:25px;
+}
+.cta a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:16px;
+    border:2px solid #fff;
+    border-radius:12px;
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+}
+.cta a:hover{
+    background:#fff;
+    color:#000;
+}
+.footer{
+    margin-top:18px;
+    font-size:14px;
+    opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>
+        <span>FCT</span>
+        <span>PRO</span>
+    </h1>
+
+    <div class="tagline">PREDICTION KA KING</div>
+
+    <div class="subtext">Free Joining Ends In</div>
+
+    <div class="counter" id="count">58</div>
+
+    <div class="stats">
+        <div><span class="arrow">➜</span>2024 IPL - 65/66 Pass</div>
+        <div><span class="arrow">➜</span>2025 IPL - 30/30 Pass</div>
+        <div><span class="arrow">➜</span>Tipping Industry Ka King!</div>
+    </div>
+
+    <div class="cta">
+        <a href="https://t.me/+uTWYl5rnZLw3MmY9" target="_blank">
+            SUBSCRIBE FOR FREE 🚀
+        </a>
+    </div>
+
+    <div class="footer">⚡ Trusted by 50,000+ Users</div>
+</div>
+
+<script>
+let count = 58;
+setInterval(()=>{
+    if(count > 1){
+        count--;
+        document.getElementById("count").innerText = count;
+    }
+},1000);
+</script>
+
+</body>
+</html>
